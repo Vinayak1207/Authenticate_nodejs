@@ -136,15 +136,15 @@ router.post('/contact/send', function(req, res, next){
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: 'kunalgoswani@gmail.com',
-        pass: 'veeislife'
+        user: 'your email id here',
+        pass: 'your password here'
       }
     });
 
     var mailOptions = {
       from: '"My Support" <kunalgoswani@gmail.com>',
       to: 'vinayak.bansal10@gmail.com',
-      subject: 'Hello from PCRepair',
+      subject: 'Hello from Visit',
       text: 'You have a submission from...  Email: '+req.body.email+' Message: '+req.body.message,
       html: '<p>You have a submission from...</p> <ul><li>Name: '+req.body.name+'</li><li> Email: '+req.body.email+'</li><li> Message: '+req.body.message+'</li></ul>'
     }
@@ -152,7 +152,7 @@ router.post('/contact/send', function(req, res, next){
     var mailOptions2 = {
       from: '"Visit <visit@gmail.com',
       to: req.body.email,
-      subject: 'Hello from PCRepair',
+      subject: 'Hello from Visit',
       text: "We got your message! Thanks for reaching us",
 
     }
