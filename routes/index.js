@@ -134,7 +134,7 @@ router.post('/contact/send', function(req, res, next){
     var transporter = nodemailer.createTransport({
       service: 'Gmail',
       port: 587,
-      secure: false, // true for 465, false for other ports
+      secure: false,
       auth: {
         user: 'your email id here',
         pass: 'your password here'
