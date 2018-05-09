@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+<div class="collapse navbar-collapse" id="navbarColor01">
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item active">
+    <a class="nav-link" href="/">Dashboard <span class="sr-only">(current)</span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a>
+  </li>
+
+
+
+</ul>
+
+
+  <h4 style="float:right; margin-right:30px; color:#CF472A">Hey! {{user.name}}</h4>
+
+
+</div>
+</nav>
+
+
+
+<form  method="post" action="/contact/send" style="width:300px; height:300px; margin-left:540px;">
+  <div class="text-center mb-4" style="">
+        <img class="mb-4" src="https://getvisitapp.com/img/png/Visit_logo.png" style="margin-top:50px;">
+        <h1 class="h3 mb-3 font-weight-normal">Share your problem</h1>
+
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" type="email" name="email" placeholder="Enter Email" required autofocus></textarea>
+      </div>
+
+
+
+    <div class="form-group">
+      <label>Message</label>
+      <textarea class="form-control" type="text" name="message" placeholder="Enter Message" required autofocus></textarea>
+    </div>
+
+    <button class="btn btn-default" type="submit">Submit</button>
+
+  </form>
